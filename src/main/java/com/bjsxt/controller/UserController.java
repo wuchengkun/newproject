@@ -116,7 +116,6 @@ public class UserController {
      * @param idCard
      * @param model
      * @return
-     *
      */
     @RequestMapping("/findUserByNameAndPhoneNumberAndIdCard")
     public String findUserByNameAndPhoneNumberAndIdCard(String name,String phoneNumber,String idCard,Model model){
