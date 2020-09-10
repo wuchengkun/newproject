@@ -29,7 +29,7 @@ public class UserController {
      * @param result
      * @return
      */
-    ("/addUser")
+    @RequestMapping("/addUser")
     public String addUser(@Valid User user, BindingResult result){
         if(result.hasErrors()){
             return "add";
