@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+</head>
+<body>
+<form action="/user/addUser" method="post">
+    姓名：<input type="text" name="name" th:field="${user.name}"><font color="red" th:errors="${user.name}"></font><br>
+    地址：<input type="text" name="address" th:field="${user.address}"><font color="red" th:errors="${user.address}"></font><br>
+    性别：<input type="text" name="sex" th:field="${user.sex}"><font color="red" th:errors="${user.sex}"></font><br>
+    邮箱：<input type="text" name="email" th:field="${user.email}"><font color="red" th:errors="${user.email}"></font><br>
+    身份证号：<input type="text" name="idCard" th:field="${user.idCard}"><font color="red" th:errors="${user.idCard}"></font><br>
+    电话号：<input type="text" name="phoneNumber" th:field="${user.phoneNumber}"><font color="red" th:errors="${user.phoneNumber}"></font><br>
+    国籍：<input type="text" name="nationality" th:field="${user.nationality}"><font color="red" th:errors="${user.nationality}"></font><br>
+    登录名：<input type="text" name="userName" th:field="${user.userName}"><font color="red" th:errors="${user.userName}"></font><br>
+    密码：<input type="text" name="password" th:field="${user.password}"><font color="red" th:errors="${user.password}"></font><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
